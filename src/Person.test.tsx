@@ -8,4 +8,5 @@ test('renders a name', () => {
 
   const divElement = screen.getByRole("contentinfo");
   expect(divElement).toHaveTextContent("Name is Prabhat");
+  expect(divElement).toHaveAttribute("role","contentinfo")
 });
